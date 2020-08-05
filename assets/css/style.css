@@ -22,6 +22,12 @@ a {
     margin: 0 auto;
     max-width: 1000px;
 }
+article{
+    min-height: 100px;
+}
+article:nth-child(odd) {
+    background-color: rgb(255, 241, 220);
+}
 
 /* HEADER */
 #header {
