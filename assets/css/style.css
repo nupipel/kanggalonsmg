@@ -23,7 +23,7 @@ a {
     max-width: 1000px;
 }
 article{
-    min-height: 100px;
+    min-height: 500px;
 }
 article:nth-child(2n+3) {
     background-color: rgb(255, 241, 220);
@@ -78,6 +78,28 @@ article:nth-child(2n+3) {
     max-height: 500px;
     display: flex;
     background-color: rgb(255, 241, 220);
+}
+#home .col-left::before{
+    background-color: #fe7765d8;
+    content:'';
+    position: absolute;
+    height: 40px;
+    width: 30px;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    top: 220px;
+    left: -40px;
+    cursor: pointer;
+}
+#home .col-right::after{
+    background-color: #fe7765d8;
+    content:'';
+    position: absolute;
+    height: 40px;
+    width: 30px;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    top: 220px;
+    right: -40px;
+    cursor: pointer;
 }
 #home .col-left img{
     width: 100%;
